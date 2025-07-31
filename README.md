@@ -11,12 +11,17 @@ Basket
 
 Models: Products, ProductFeature
 Types: ProductCategory
-Pipes: DiscountPipe
+Pipes: DiscountPrice, Icons
 Services: ProductService
 
 ## Comments
 
 SSR Active
+
+## Issues
+Time
+DiscountPipe cannot retrieve Product fullPrice property ???
+ 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.20.
 
