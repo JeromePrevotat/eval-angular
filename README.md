@@ -1,5 +1,19 @@
 # Eval Angular
 
+## Objectives
+
+Homepage + Discount Products
+About us
+All Products + Filter
+Basket
+
+## Structure
+
+Models: Products, ProductFeature
+Types: ProductCategory
+Pipes: DiscountPipe
+Services: ProductService
+
 ## Comments
 
 SSR Active

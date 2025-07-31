@@ -1,0 +1,90 @@
+<div class="form-container">
+    <h3>Filter Products</h3>
+    <form [formGroup]="filterForm" action="">
+        <div class="form-field">
+            <label for="title">Product Name: </label>
+            <input id="title" type="text" formControlName="title" [class.border-red-500]="isFieldInvalid('title')"/>
+            <!-- @if (isFieldInvalid('title')) {
+                <div class="mt-1 text-sm text-red-600">
+                    {{ getFieldError('title') }}
+                </div>
+            } -->
+        </div>
+        <div class="form-field">
+            <label for="category">Category: </label>
+            <select id="category" type="text" placeholder="Select Category" formControlName="category" [class.border-red-500]="isFieldInvalid('category')">
+                <option value="ventilateur">Ventilateur</option>
+                <option value="climatiseur">Climatiseur</option>
+                <option value="refroidisseur">Refroidisseur</option>
+            </select>
+            <!-- @if (isFieldInvalid('category')) {
+                <div class="mt-1 text-sm text-red-600">
+                    {{ getFieldError('category') }}
+                </div>
+            } -->
+        </div>
+        <div class="checkboxes-container">
+            <div class="checkbox-container">
+                <label for="silent">Silencieux </label>
+                <input id="silent" type="checkbox" formControlName="silent" [class.border-red-500]="isFieldInvalid('silent')">
+            </div>
+            <div class="checkbox-container">
+                <label for="remote">Remote Control </label>
+                <input id="remote" type="checkbox" formControlName="remote" [class.border-red-500]="isFieldInvalid('remote')">
+            </div>
+            <div class="checkbox-container">
+                <label for="led">LED </label>
+                <input id="led" type="checkbox" formControlName="led" [class.border-red-500]="isFieldInvalid('led')">
+            </div>
+            <div class="checkbox-container">
+                <label for="movable">Movable </label>
+                <input id="movable" type="checkbox" formControlName="movable" [class.border-red-500]="isFieldInvalid('movable')">
+            </div>
+            <div class="checkbox-container">
+                <label for="eco">Eco </label>
+                <input id="eco" type="checkbox" formControlName="eco" [class.border-red-500]="isFieldInvalid('eco')">
+            </div>
+            <div class="checkbox-container">
+                <label for="360">360 </label>
+                <input id="360" type="checkbox" formControlName="360" [class.border-red-500]="isFieldInvalid('360')">
+            </div>
+            <div class="checkbox-container">
+                <label for="schedule">Minuteur </label>
+                <input id="schedule" type="checkbox" formControlName="schedule" [class.border-red-500]="isFieldInvalid('schedule')">
+            </div>
+            <div class="checkbox-container">
+                <label for="wifi">Wi-Fi </label>
+                <input id="wifi" type="checkbox" formControlName="wifi" [class.border-red-500]="isFieldInvalid('wifi')">
+            </div>
+            <div class="checkbox-container">
+                <label for="carryable">Transportable </label>
+                <input id="carryable" type="checkbox" formControlName="carryable" [class.border-red-500]="isFieldInvalid('carryable')">
+            </div>
+            <div class="checkbox-container">
+                <label for="usb">USB </label>
+                <input id="usb" type="checkbox" formControlName="usb" [class.border-red-500]="isFieldInvalid('usb')">
+            </div>
+            <div class="checkbox-container">
+                <label for="green">Green </label>
+                <input id="green" type="checkbox" formControlName="green" [class.border-red-500]="isFieldInvalid('green')">
+            </div>
+            <div class="checkbox-container">
+                <label for="water">Water </label>
+                <input id="water" type="checkbox" formControlName="water" [class.border-red-500]="isFieldInvalid('water')">
+            </div>
+            <div class="checkbox-container">
+                <label for="industrial">Industrial </label>
+                <input id="industrial" type="checkbox" formControlName="industrial" [class.border-red-500]="isFieldInvalid('industrial')">
+            </div>
+            <div class="checkbox-container">
+                <label for="power">Power </label>
+                <input id="power" type="checkbox" formControlName="power" [class.border-red-500]="isFieldInvalid('power')">
+            </div>
+            <div class="checkbox-container">
+                <label for="solid">Solid </label>
+                <input id="solid" type="checkbox" formControlName="solid" [class.border-red-500]="isFieldInvalid('solid')">
+            </div>
+        </div>
+        <!-- <button type="submit" class="submit-btn" (click)="applyFilters()">Apply Filters</button> -->
+    </form>
+</div>

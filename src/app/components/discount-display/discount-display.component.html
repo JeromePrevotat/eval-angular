@@ -1,0 +1,8 @@
+<div class="discount-display">
+    <h3>Discounts Right Now !!!</h3>
+    <div class="discount-items">
+        @for(item of discountedProducts$ | async; track item.id) {
+            <app-discount-item-card [product]="item"></app-discount-item-card>
+        }
+    </div>
+</div>
