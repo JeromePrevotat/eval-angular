@@ -1,11 +1,12 @@
 import { Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { ProductService } from '../../services/product.service';
+import { IconsPipe } from '../../pipes/icons.pipe';
 
 @Component({
   selector: 'app-filter-form',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, IconsPipe],
   templateUrl: './filter-form.component.html',
   styleUrl: './filter-form.component.css'
 })
