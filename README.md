@@ -2,10 +2,10 @@
 
 ## Objectives
 
-Homepage + Discount Products
-About us
-All Products + Filter
-Basket
+Homepage + Discount Products: DONE
+About us: DONE
+All Products + Filter: PARTIALLY DONE
+Basket: WIP
 
 ## Structure
 
@@ -19,9 +19,9 @@ Services: ProductService
 SSR Active
 
 ## Issues
+
 Time
 DiscountPipe cannot retrieve Product fullPrice property ???
- 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.20.
 

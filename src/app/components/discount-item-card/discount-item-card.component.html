@@ -8,5 +8,8 @@
             <p class="discount-percent">{{ product.discountPercent | discountDisplay:product}}</p>
         </div>
         <a [routerLink]="['/products', product.id]">Buy</a>
+        <button (click)="addToBasket(product)">
+            <i class="material-icons">{{ "cart" | icons }}</i>
+        </button>
     }
 </div>

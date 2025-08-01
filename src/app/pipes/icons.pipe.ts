@@ -46,6 +46,8 @@ export class IconsPipe implements PipeTransform {
         return 'speed';
       case 'oscillating':
         return 'rotate_right';
+      case 'cart':
+        return 'add_shopping_cart';
       default:
         return '';
     }

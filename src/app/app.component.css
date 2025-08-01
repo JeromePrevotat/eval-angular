@@ -7,3 +7,12 @@
 app-home{
     flex: 1;
 }
+
+.main-content{
+    display: flex;
+    flex-direction: row;
+}
+
+app-basket{
+    margin-left: auto;
+}
