@@ -19,6 +19,5 @@ export class ProductsComponent {
     this.productService.products$.subscribe(products => {
       this.products = products;
     });
-    console.log('Produits reçus :', this.products); // Ajoute ce log
   }
 }

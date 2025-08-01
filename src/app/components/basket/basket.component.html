@@ -1,1 +1,6 @@
-<p>basket works!</p>
+<div class="container">
+    @for(basketItem of basketContent$; track basketItem.id) {
+        <p>{{ basketItem.title }} - {{ basketItem.fullPrice | discountPrice | currency }}</p>
+        <p>{{ totalPrice$ | currency }}</p>
+    }
+</div>

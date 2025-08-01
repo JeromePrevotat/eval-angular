@@ -23,6 +23,10 @@ export class ProductService {
                 );
   }
 
+  getDiscountedPrice(product: Product): number {
+    return product.fullPrice - (product.fullPrice * (product.discountPercent * 100) / 100);
+  }
+
   get getProducts(): Product[] {
     return this.productsSubject.value;
   }

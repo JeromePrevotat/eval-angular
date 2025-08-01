@@ -60,7 +60,7 @@ export class FilterFormComponent {
     return '';
   }
 
-  submitCreateStation(){
+  applyFilters(){
     this.isSubmitted = true;
     console.log('Form submitted:', this.filterForm.value);
     if (this.filterForm.valid) {

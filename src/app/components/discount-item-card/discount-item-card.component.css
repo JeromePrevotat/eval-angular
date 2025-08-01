@@ -37,3 +37,7 @@ img{
     color: red;
     font-weight: bold;
 }
+
+a{
+    margin-bottom: 8px;
+}

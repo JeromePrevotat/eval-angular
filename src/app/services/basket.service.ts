@@ -20,7 +20,7 @@ export class BasketService {
 
   }
 
-  getBasketContent(): Product[] {
+  get getBasketContent(): Product[] {
     return this.basketContentSubject.value;
   }
 }
