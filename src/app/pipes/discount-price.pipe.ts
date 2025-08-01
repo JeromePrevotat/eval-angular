@@ -8,7 +8,10 @@ import { Product } from '../models/product';
 export class DiscountPricePipe implements PipeTransform {
 
   transform(value: number, ...args: Product[]): number {
-    return args[0].fullPrice - (args[0].fullPrice * args[0].discountPercent);
+    if(args[0] && args[0].fullPrice && args[0].discountPercent){ 
+      return parseFloat((args[0].fullPrice - (args[0].fullPrice * args[0].discountPercent)).toFixed(2));
+    }
+    return value;
   }
 
 }

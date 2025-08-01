@@ -2,9 +2,11 @@
     @if(product){
         <h4>{{ product.title }}</h4>
         <img src="{{ product.image }}" alt="{{ product.title }}"/>
-        <!-- Issue reading fullPrice Property ? -->
-        <!-- <p>{{ product.fullPrice | discountPrice }}</p> -->
-        <!-- <p>{{ product.discountPercent }}%</p> -->
+        <p class="base-price">{{ product.fullPrice | currency }}</p>
+        <div class="discount-price-container">
+            <p class="discount-price">{{ product.fullPrice | discountPrice:product | currency }}</p>
+            <p class="discount-percent">{{ product.discountPercent | discountDisplay:product}}</p>
+        </div>
         <a [routerLink]="['/products', product.id]">Buy</a>
     }
 </div>

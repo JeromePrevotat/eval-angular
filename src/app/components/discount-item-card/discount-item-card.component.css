@@ -4,7 +4,7 @@
     align-items: center;
     text-align: center;
     width: 150px;
-    height: 200px;
+    height: 250px;
     border: 1px solid #eee;
     border-radius: 5px;
     padding: 10px;
@@ -16,4 +16,24 @@ img{
     height: 100px;
     object-fit: fill;
     border-radius: 50%;
+}
+
+.discount-price-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.base-price {
+    text-decoration: line-through;
+}
+
+.discount-price{
+    color: green;
+    font-weight: bold;
+}
+
+.discount-percent {
+    color: red;
+    font-weight: bold;
 }
