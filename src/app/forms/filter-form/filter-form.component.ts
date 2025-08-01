@@ -27,6 +27,7 @@ export class FilterFormComponent {
       eco: [false],
       360: [false],
       schedule: [false],
+      highPerformance: [false],
       wifi: [false],
       carryable: [false],
       usb: [false],
@@ -34,7 +35,10 @@ export class FilterFormComponent {
       water: [false],
       industrial: [false],
       power: [false],
-      solid: [false]
+      solid: [false],
+      wall: [false],
+      speed: [false],
+      oscillating: [false]
     });
   }
 

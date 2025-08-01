@@ -22,12 +22,10 @@ export class DiscountItemCardComponent{
   addToBasket(product: Product): void {
     if (product) {
       this.basketService.addToBasket(product);
-      console.log('ADD: ', product);
+      localStorage.setItem('basket', JSON.stringify(this.basketService.getBasketContent()));
     } else {
       console.error('ERROR');
     }
-    this.basketService.getBasketContent().forEach(item => {
-      console.log('Basket Item: ', item);
-    });
+    console.log('Basket content:', JSON.parse(localStorage.getItem('basket') || '[]'));
   }
 }
